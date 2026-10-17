@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Happy Birthday Sonika</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg"></div>
+  <div id="confetti-container"></div>
+
+  <div id="startScreen" class="start-screen">
+    <div class="start-box card">
+      <h2>WELCOME TO SONIKA’S BIRTHDAY</h2>
+      <p>Tap the button below to open the birthday surprise.</p>
+      <button id="startBtn" class="btn">OPEN SURPRISE</button>
+    </div>
+  </div>
+
+  <main class="page">
+    <section class="hero card">
+      <div class="top-badge">SPECIAL BIRTHDAY WISHES</div>
+      <h1>HAPPY BIRTHDAY SONIKA</h1>
+      <p class="subtitle">Wishing you a day full of joy, love, success, and beautiful memories.</p>
+
+      <div class="cake-area">
+        <div class="heart heart-1"></div>
+        <div class="heart heart-2"></div>
+        <div class="heart heart-3"></div>
+
+        <div class="cake">
+          <div class="candle">
+            <div class="flame"></div>
+          </div>
+          <div class="cake-top"></div>
+          <div class="cake-middle"></div>
+          <div class="cake-bottom"></div>
+          <div class="plate"></div>
+        </div>
+
+        <button id="blowBtn" class="btn">BLOW THE CANDLE</button>
+        <p id="message" class="message hidden">* NI HAO HAPPY BIRTHDAY SONIKA *</p>
+
+        <audio id="birthdaySong" src="music/birthday.mp3" preload="auto" loop></audio>
+      </div>
+    </section>
+
+    <section class="about card">
+      <h2>Warm Wishes</h2>
+      <p>
+        She has a graceful presence, a kind personality, and a lovely smile.
+        Wishing her happiness, confidence, good health, and success in everything ahead.
+      </p>
+
+      <div class="gallery">
+        <figure class="photo-card"><img src="images/photo1.jpg" alt="Sonika photo 1"></figure>
+        <figure class="photo-card"><img src="images/photo2.jpg" alt="Sonika photo 2"></figure>
+        <figure class="photo-card"><img src="images/photo3.jpg" alt="Sonika photo 3"></figure>
+        <figure class="photo-card"><img src="images/photo4.jpg" alt="Sonika photo 4"></figure>
+        <figure class="photo-card"><img src="images/photo5.jpg" alt="Sonika photo 5"></figure>
+      </div>
+
+      <div class="slideshow-controls">
+        <button id="prevBtn" class="btn small-btn">PREVIOUS</button>
+        <button id="nextBtn" class="btn small-btn">NEXT</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
